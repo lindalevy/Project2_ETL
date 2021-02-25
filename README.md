@@ -1,2 +1,2 @@
 # Project2_ETL
-Team: Will, Jesse, Franz, Linda
+Team: Will, Terry, Franz, Linda
