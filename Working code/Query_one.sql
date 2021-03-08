@@ -28,7 +28,7 @@ INNER JOIN suburb ON ato.postcode = suburb.postcode;
 -- create another column, that compares the value in the column above against the 'expected donation index' 
 -- and labels the postcode as "generous" or "no"
 --------add column for donation by area population into ato table 
-DROP TABLE IF EXISTS ato CASCADE;
+
 ALTER TABLE ato
 
 ADD COLUMN "Donation by postcode population" INTEGER;

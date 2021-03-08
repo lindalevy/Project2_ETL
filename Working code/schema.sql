@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS acnc CASCADE;
 -- Create tables for data to be loaded into
 
 CREATE TABLE suburb (
-	postcode VARCHAR NOT NULL PRIMARY KEY,
+	postcode INTEGER NOT NULL PRIMARY KEY,
 	suburb VARCHAR,
 	state VARCHAR
 );
@@ -14,7 +14,7 @@ CREATE TABLE suburb (
 
 CREATE TABLE ato (
 	State TEXT,
-	postcode VARCHAR PRIMARY KEY,
+	postcode INTEGER PRIMARY KEY,
 	No_Individuals INT,
 	Total_Taxable_$ NUMERIC,
 	Total_Donation_$ NUMERIC,
@@ -27,7 +27,7 @@ CREATE TABLE acnc (
  	ABN VARCHAR,
     Charity_Legal_Name varchar,
     State varchar,
-    postcode VARCHAR,
+    postcode INTEGER,
     Charity_Size varchar,
     Operates_in_VIC varchar,
     PBI varchar,
@@ -74,4 +74,4 @@ CREATE TABLE acnc (
   
   
   SELECT *
-FROM acnc
+FROM suburb;
